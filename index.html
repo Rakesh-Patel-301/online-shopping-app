@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-Shoping</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(225, 228, 228);
+        }
+        h1{
+            text-align: center;
+        }
+        .online-shopping-container{
+          max-width: 800px;
+          background-color: white;
+          margin:10px auto;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0px 4px 8px 0px ;
+         
+        }
+        .product-row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0px;
+        }
+        button{
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+            padding: 10px; 
+            cursor: pointer;  
+        }
+        button:hover{
+            background-color: rgb(5, 5, 110);
+        }
+        h2{
+            margin: 10px 0px;
+        }
+        #feedback{
+            position:fixed;
+            top: 10px;
+            right: 40px;
+            background-color: white;
+            color:white;
+            padding: 5px 10px;
+            display: none;
+        }
+        #totalprice{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="online-shopping-container">
+    <h1>Online Shopping </h1>
+    <p id="feedback"></p>
+    <h2>Available Products</h2>
+    <div  id="productcontainer">
+        <!-- <div class="product-row">
+            <p>Laptop-Rs 59999</p>
+            <button>Add to cart</button>
+         </div>
+          <div class="product-row">
+            <p>Laptop-Rs 59999</p>
+            <button>Add to cart</button>
+         </div>
+          <div class="product-row">
+            <p>Laptop-Rs 59999</p>
+            <button>Add to cart</button>
+         </div> -->
+    </div>
+      <h2>My Carts</h2>
+      <div id="cartContainer">
+        <!-- <div class="product-row">
+            <p>Laptop-Rs 59999</p>
+            <button>remove</button>
+         </div> -->
+
+      </div>
+      <h2 id="totalprice">Rs 0</h2>
+      <h2>Actions</h2>
+      <button id="SortByPrice">Sort by price</button>
+      <button id="clearCart">Clear cart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
